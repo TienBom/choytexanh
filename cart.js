@@ -1,17 +1,17 @@
-$(".product-remove > i").on("click", function(){
-  $(this).parent().parent().remove();
+$(".product-remove > i").on("click", function () {
+   $(this).parent().parent().remove();
 });
-$(".button-up-down").on("click", function(){
-   if($(this).attr("value")=="+"){
-      var quantity=$(this).prev().attr("value");
+$(".button-up-down").on("click", function () {
+   if ($(this).attr("value") == "+") {
+      var quantity = $(this).prev().attr("value");
       quantity++;
-      $(this).prev().attr("value",quantity);
+      $(this).prev().attr("value", quantity);
    }
-   else{
-      var quantity=$(this).next().attr("value");
-      if(quantity>0){
+   else {
+      var quantity = $(this).next().attr("value");
+      if (quantity > 0) {
          quantity--;
-         $(this).next().attr("value",quantity);
+         $(this).next().attr("value", quantity);
 
       }
    }
