@@ -331,7 +331,7 @@ body{
 }
 
 .slide {
-    width: 9000px;
+    width: 200%;
     transition: all 0.5s;
 }
 #slide_content_ban_chay div {
